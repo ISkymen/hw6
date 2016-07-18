@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home work 6</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="top-pannel">
+            <div class="phone sprite">(044)123-45-67 (044)567-89-10</div>
+            <div class="login-pannel sprite">
+                <form>
+                    <input type="text" id="user" required placeholder="логин">
+                    <input type="password" id="password" required placeholder="пароль">
+                    <input type="submit" id="submit" value="Вход">
+                </form>
+                <a href="" class="reg">Регистрация</a>
+                <a href="" class="forgot">Забыли пароль?</a>
+            </div>
+            <div class="quick-links">
+                <a href="" class="home sprite">Home</a>
+                <a href="" class="map sprite">Map</a>
+                <a href="" class="email sprite">E-mail</a>
+            </div>
+        </div>
+        <div class="header-image"></div>
+        <div class="bottom-pannel">
+            <ul class="menu-top">
+                <li><a class="active" href="">О компании</a></li>
+                <li><a href="">Оплата</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <div class="cart sprite">
+                <div class="quantity">
+                    товаров:
+                    <span>0</span>
+                </div>
+                <div class="sum">
+                    на сумму:
+                    <span>0,00 грн.</span>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <div class="find">
+        <form action="" class="find-form">
+            <h2 class="find-form__title">Поиск по автомобилю</h2>
+            <div class="find-form__col">
+                <h3 class="find-form__col-title">Диски:</h3>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>Марка </b>авто:</h4>
+                    <select title="disk" id="disk-mf" class="find-form__select find-form__select--w1">
+                        <option value=""></option>
+                        <option value="">BMW</option>
+                        <option value="">Lada</option>
+                        <option value="">Renault</option>
+                    </select>
+                </div>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>Модель </b>автомобиля:</h4>
+                    <select title="disk" id="disk-model" class="find-form__select find-form__select--w1">
+                        <option value=""></option>
+                        <option value="">BMW model 1</option>
+                        <option value="">BMW model 2</option>
+                        <option value="">BMW model 3</option>
+                    </select>
+                </div>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>Год выпуска </b>автомобиля:</h4>
+                    <select title="disk" id="disk-year" class="find-form__select">
+                        <option value=""></option>
+                        <option value="">1980</option>
+                        <option value="">1981</option>
+                        <option value="">1982</option>
+                    </select>
+                </div>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>Комплектация:</b></h4>
+                    <select title="disk" id="disk-eq" class="find-form__select find-form__select--w1">
+                        <option value=""></option>
+                        <option value="">базовая</option>
+                        <option value="">полная</option>
+                    </select>
+                </div>
+            </div>
+            <div class="find-form__col find-form__col--tire">
+                <h3 class="find-form__col-title find-form__col-title--tire">Шины:</h3>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>Марка </b>авто:</h4>
+                    <select title="tire" id="tire-mf" class="find-form__select find-form__select--w1">
+                        <option value=""></option>
+                        <option value="">BMW</option>
+                        <option value="">Lada</option>
+                        <option value="">Renault</option>
+                    </select>
+                </div>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>Модель </b>автомобиля:</h4>
+                    <select title="tire" id="tire-model" class="find-form__select find-form__select--w1">
+                        <option value=""></option>
+                        <option value="">BMW model 1</option>
+                        <option value="">BMW model 2</option>
+                        <option value="">BMW model 3</option>
+                    </select>
+                </div>
+                <div class="find-form__filter find-form__filter--year">
+                    <h4 class="find-form__filter-label"><b>Год выпуска </b>автомобиля:</h4>
+                    <select title="tire" id="tire-year" class="find-form__select">
+                        <option value=""></option>
+                        <option value="">1980</option>
+                        <option value="">1981</option>
+                        <option value="">1982</option>
+                    </select>
+                </div>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>Комплектация:</b></h4>
+                    <select title="tire" id="tire-eq" class="find-form__select find-form__select--w1">
+                        <option value=""></option>
+                        <option value="">базовая</option>
+                        <option value="">полная</option>
+                    </select>
+                </div>
+            </div>
+            <input class="find-form__submit" type="submit" value="поиск...">
+        </form>
+
+        <form action="" class="find-form find-form--tire">
+            <h2 class="find-form__title find-form__title--left">Поиск шин</h2>
+            <div class="find-form__filter">
+                <h4 class="find-form__filter-label find-form__filter-label--tire"><b>Размер:</b></h4>
+                <select title="disk" id="disk-mf" class="find-form__select find-form__select--w2">
+                    <option value="">135</option>
+                    <option value="" selected>145</option>
+                    <option value="">155</option>
+                </select>
+                <span> / </span>
+                <select title="disk" id="disk-model" class="find-form__select find-form__select--w2">
+                    <option value=""></option>
+                    <option value="">55</option>
+                    <option value="">60</option>
+                    <option value="">65</option>
+                </select>
+            </div>
+            <div class="find-form__filter">
+                <h4 class="find-form__filter-label find-form__filter-label--tire find-form__filter-label--tire--R">
+                    <b>R</b></h4>
+                <select title="disk" id="disk-year" class="find-form__select find-form__select--year">
+                    <option value="">10</option>
+                    <option value="" selected>12</option>
+                    <option value="">14</option>
+                </select>
+            </div>
+            <div class="find-form__filter">
+                <h4 class="find-form__filter-label find-form__filter-label--tire"><b>Сезон:</b></h4>
+                <div class="find-form__check-wrapper">
+                    <div class="find-form__check">
+                        <input type="checkbox" name="season" id="summer">
+                        <label for="summer">лето</label>
+                    </div>
+                    <div class="find-form__check">
+                        <input type="checkbox" name="season" id="winter">
+                        <label for="winter">зима</label>
+                    </div>
+                    <div class="find-form__check">
+                        <input type="checkbox" name="season" id="all">
+                        <label for="all">всесез</label>
+                    </div>
+                </div>
+            </div>
+            <input class="find-form__submit" type="submit" value="поиск...">
+        </form>
+
+        <form action="" class="find-form find-form--disk">
+
+            <div class="find-form__col find-form__col--1">
+                <h2 class="find-form__title find-form__title--left">Поиск дисков</h2>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label find-form__filter-label--disk"><b>Диаметр </b>диска:</h4>
+                    <select title="disk" id="disk-mf" class="find-form__select find-form__select--w3">
+                        <option value="">13</option>
+                        <option value="" selected>14</option>
+                        <option value="">15</option>
+                    </select>
+                </div>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label find-form__filter-label--disk"><b>Количество </b>крепежных
+                        отверстий:</h4>
+                    <select title="disk" id="disk-model" class="find-form__select find-form__select--w3">
+                        <option value=""></option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="" selected>3</option>
+                    </select>
+                </div>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label find-form__filter-label--disk"><b>Диаметр </b>расположения
+                        крепежных отверстий:</h4>
+                    <select title="disk" id="disk-year" class="find-form__select find-form__select--w3">
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                    </select>
+                </div>
+            </div>
+            <div class="find-form__col find-form__col--2">
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>ДЦО </b><br>(диаметр центрального отверстия:</h4>
+                    <select title="tire" id="tire-mf" class="find-form__select find-form__select--w3">
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                    </select>
+                </div>
+                <div class="find-form__filter">
+                    <h4 class="find-form__filter-label"><b>ЕТ</b><br>(вылет диска):</h4>
+                    <select title="tire" id="tire-model" class="find-form__select find-form__select--w3">
+                        <option value=""></option>
+                        <option value="" selected>12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                    </select>
+                </div>
+            </div>
+            <input class="find-form__submit" type="submit" value="поиск...">
+        </form>
+    </div>
+    <aside class="sidebar sidebar_left">
+        <h2 class="sidebar__title sprite">Каталог продукции:</h2>
+        <h3 class="sidebar__title sidebar__title--sub sprite">Шины</h3>
+        <ul class="menu-sidebar">
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 1</a></li>
+            <li><a class="menu-sidebar__link menu-sidebar__link--active sprite" href="">Наименование 2</a></li>
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 3</a></li>
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 4</a></li>
+        </ul>
+        <h3 class="sidebar__title sidebar__title--sub sprite">Диски</h3>
+        <ul class="menu-sidebar">
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 1</a></li>
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 2</a></li>
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 3</a></li>
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 4</a></li>
+        </ul>
+        <h3 class="sidebar__title sidebar__title--sub sprite">Болты</h3>
+        <ul class="menu-sidebar">
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 1</a></li>
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 2</a></li>
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 3</a></li>
+            <li><a class="menu-sidebar__link sprite" href="">Наименование 4</a></li>
+        </ul>
+
+    </aside>
+    <main>
+
+        <div class="product">
+            <span class="product__tm">Goodyear</span>
+            <figure>
+                <figcaption class="product__name">
+                    Ultra Grip Extrem
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire1.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">90.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+        <div class="product">
+            <span class="product__tm">Nokian</span>
+            <figure>
+                <figcaption class="product__name">
+                    Hakkapeliitta R
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire2.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">115.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+        <div class="product">
+            <span class="product__tm">Hankook</span>
+            <figure>
+                <figcaption class="product__name">
+                    K 708 155/65 R14
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire3.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">393.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+        <div class="product">
+            <span class="product__tm">Goodyear</span>
+            <figure>
+                <figcaption class="product__name">
+                    Ultra Grip Extrem
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire1.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">90.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+        <div class="product">
+            <span class="product__tm">Nokian</span>
+            <figure>
+                <figcaption class="product__name">
+                    Hakkapeliitta R
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire2.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">115.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+        <div class="product">
+            <span class="product__tm">Hankook</span>
+            <figure>
+                <figcaption class="product__name">
+                    K 708 155/65 R14
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire3.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">393.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+        <div class="product">
+            <span class="product__tm">Goodyear</span>
+            <figure>
+                <figcaption class="product__name">
+                    Ultra Grip Extrem
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire1.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">90.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+        <div class="product">
+            <span class="product__tm">Nokian</span>
+            <figure>
+                <figcaption class="product__name">
+                    Hakkapeliitta R
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire2.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">115.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+        <div class="product">
+            <span class="product__tm">Hankook</span>
+            <figure>
+                <figcaption class="product__name">
+                    K 708 155/65 R14
+                </figcaption>
+                <div class="product__canvas">
+                    <img class="product__img" src="images/tire3.jpg" alt="">
+                </div>
+            </figure>
+            <div class="product__price">393.00 <span class="product__price-suffix">грн.</span></div>
+            <a href="" class="product__link"></a>
+        </div>
+    </main>
+    <aside class="sidebar sidebar-right">
+        <form>
+            <h2 class="sidebar__title sprite">Бренды:</h2>
+            <h3 class="sidebar__title sidebar__title--sub sprite">Шины</h3>
+            <div class="check">
+                <input class="check__checkbox" type="checkbox" name="brand1" id="brand1">
+                <label class="check__label" for="brand1">Бренд 1</label>
+                <input class="check__checkbox" type="checkbox" name="brand2" id="brand2">
+                <label class="check__label" for="brand2">Бренд 2</label>
+                <input class="check__checkbox" type="checkbox" name="brand3" id="brand3">
+                <label class="check__label" for="brand3">Бренд 3</label></div>
+            <h3 class="sidebar__title sidebar__title--sub sprite">Диски</h3>
+            <div class="check">
+                <input class="check__checkbox" type="checkbox" name="brand4" id="brand4">
+                <label class="check__label" for="brand4">Бренд 1</label>
+                <input class="check__checkbox" type="checkbox" name="brand5" id="brand5">
+                <label class="check__label" for="brand5">Бренд 2</label>
+                <input class="check__checkbox" type="checkbox" name="brand6" id="brand6">
+                <label class="check__label" for="brand6">Бренд 3</label></div>
+            <input type="submit" class="sidebar__submit" value="Выбрать">
+        </form>
+    </aside>
+    <div class="banner sprite"></div>
+    <footer>
+        <ul class="menu-footer">
+            <li class="menu-footer__item"><a class="menu-footer__link" href="">О компании</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="">Доставка</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="">Статьи</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="">Контакты</a></li>
+        </ul>
+        <div class="copy">Создание сайта © Global Vision</div>
+    </footer>
+</div>
+</body>
+</html>
