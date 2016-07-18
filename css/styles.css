@@ -363,6 +363,7 @@ header {
     border-radius: 2px;
     border-width: 2px 1px 0 2px;
     margin: 0 0 4px 0;
+    font-size: 12px;
 }
 
 .find-form__select--w1 {
@@ -617,6 +618,7 @@ footer {
     font-size: 13px;
     padding-left: 25px;
     position: relative;
+    display: inline-block;
 }
 
 .check__label:before {
